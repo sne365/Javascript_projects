@@ -1,0 +1,49 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body{
+    font-family: "Manrope", sans-serif;
+    height: 100vh;
+    /* background: url(backpic.webp) no-repeat center center / cover; */
+    background: linear-gradient(to bottom, #0c0c3f, #000000);
+    color: white;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+
+}
+
+h1,h2{
+    font-weight: normal;
+    margin: 0.5rem ;
+}
+h1{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+h2{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.txt-effect::after{
+    content: "";
+    margin-left: 4px;
+    width: 1px;
+    height: 5%;
+    border-right: 4px solid salmon;
+    animation: blink 0.5s infinite ease;
+ 
+
+}
+@keyframes blink {
+0%{opacity: 0;}
+100%{opacity:1 ;}
+    
+}
